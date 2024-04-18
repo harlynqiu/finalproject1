@@ -11,6 +11,95 @@
   body{
     background-color: rgb(0, 23, 100);
   }
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+header{
+    background-color: rgb(221, 239, 239);
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px; 
+    min-height: auto; 
+    margin-right: auto; 
+    font-size: 15px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent; 
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+
+.main{
+   
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 46%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: white;
+    font-size: 70px;
+}
+
+.below{
+    position: absolute;
+    top: 60%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align-last: center;
+}
+.below p{
+    color: white;
+    font-size: 20px;
+}
+.button{
+    position: absolute;
+    top: 70%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.btn{
+    border: 1px solid white; 
+    padding: 5px 20px;
+    color: white;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
   
 </style>
 <body>
@@ -18,9 +107,9 @@
     <div class = "main">
       <ul>
         <li class = "active"><a href = "#">Home</a></li>
-        <li><a href = "about.html">About</a></li>
-        <li><a href = "portfolio.html">Portfolio</a></li>
-        <li><a href = "uniquePage.html">Unique Page</a></li>
+        <li><a href = "/about">About</a></li>
+        <li><a href = "/portfolio">Portfolio</a></li>
+        <li><a href = "/uniquePage">Unique Page</a></li>
       </ul>
     </div>
     <div class ="title">
@@ -31,7 +120,7 @@
       <p> Hi, welcome to the home page. Feel free to browse this website. If you want to learn more about me, click the button below!  </p>
     </div>
     <div class = "button">
-      <a href = "about.html" class = "btn"> KNOW MORE ABOUT ME</a>
+      <a href = "about" class = "btn"> KNOW MORE ABOUT ME</a>
     </div>
   </header>
   

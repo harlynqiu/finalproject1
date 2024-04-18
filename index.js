@@ -14,31 +14,23 @@ const server = http.createServer((req, res) => {
   //  res.setHeader("Content-Type", "text/html")
     let myUrl = './views/'
     if(req.url == '/'){
-        myUrl += 'home.html'
+        myUrl += 'main.html'
         res.statusCode = 200
     }
-    else if(req.url == '/about'){
+    else if(req.url == '/views/about'){
         myUrl += 'about.html'
         res.statusCode = 200
     }
-    else if(req.url == '/home'){
+    else if(req.url == '/views/home'){
         myUrl += 'home.html'
         res.statusCode = 200
     }
-    else if(req.url == '/game'){
-        myUrl += 'game.html'
+    else if(req.url == '/views/game'){
+        myUrl += 'uniquePage.html'
         res.statusCode = 200
     }
-    else if(req.url == '/portfolio'){
+    else if(req.url == '/views/portfolio'){
         myUrl += 'portfolio.html'
-        res.statusCode = 200
-    }
-    else if(req.url == '/tetris'){
-        myUrl += 'tetris.html'
-        res.statusCode = 200
-    }
-    else if(req.url == '/tictactoe'){
-        myUrl += 'tictactoe.html'
         res.statusCode = 200
     }
     else{

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include(`../partials/head`); %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href = "src/datafiles/portfolio.css">
+  <style>
+    *{
+    margin: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.header{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color:#002576;  
+}
+
+.personal{
+    width: auto;
+    height: auto;
+    border-radius: 25px; 
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #002576;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #002576;
+  }
+  </style>
+</head>
+<body>
+    <ul>
+        <li><a href = "views/main.html">Home</a></li>
+      </ul>
+    <div class = "header">
+        My Portfolio
+    </div>
+    <div class = "personal">
+        <h1> Personal Data</h1>
+        <p>
+            Name: Harlyn Nichole T. Qiu<br>
+            Birthday: November 13, 2000<br>
+            Age: 23 years old <br>
+            Birth Place: Davao City, Philippines<br>
+            Civil Status: Single<br>
+            Mother's Name: Nancy Qiu <br>
+            Father's Name: Gua Huai Qiu <br>
+            Nationality: Filipino<br>
+            Religion: Christianity<br>
+        </p>
+        <h1> Educational Background</h1>
+        <p>
+            College: Ateneo de Davao University <br>
+            Senior HighSchool: Davao Christian HighSchool <br>
+            Junior Highschool: Davao Christian HighSchool <br>
+            Elementary: Abba's Orchard School<br>
+        </p>
+        <h1> Skills</h1>
+        <p>
+            Communication<br>
+            Teamwork Skills<br>
+            Adaptability<br>
+            Organization<br>
+            Sales<br>
+        </p>
+        <h1> Achievements</h1>
+        <p>
+            Finisher of Batang Pinoy Race <br> 
+            Finisher of 10k Marathon (Happy Feet 2023)<br>
+            Finisher of 10k Marathon (AIA Kadayawan 2023)<br>
+            Graduated Senior HighSchool <br>
+            Graduated Junior HighSchool <br>
+            Graduated Elementary <br>
+            
+        </p>
+    </div>
+</div>
+
+</body>
+
+</html>
